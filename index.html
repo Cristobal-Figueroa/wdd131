@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 – Dynamic Web Fundamentals - Cristobal Figueroa</title>
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals - Cristobal Figueroa - Personal landing page showcasing web development skills, background, and resources from Chillan, Chile">
+    <meta name="author" content="Cristobal Figueroa">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>WDD 131: Dynamic Web Fundamentals</h1>
+        <nav aria-label="Main navigation">
+            <a href="https://www.linkedin.com/in/cristobal-figueroa/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://byupw.instructure.com/" target="_blank" rel="noopener">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/2-ne/8?lang=eng&id=p3#p3" target="_blank" rel="noopener">Scripture</a>
+            <a href="final/index.html">Final Project</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="card" aria-labelledby="about-heading">
+            <h2 id="about-heading">About Me</h2>
+            <div class="card-content">
+                <img src="images/profile.jpg" alt="Cristobal Figueroa" width="200" height="200">
+                <p>My name is Cristobal and I'm from Chillan, Chile. I am currently studying web development and I'm passionate about creating beautiful and functional websites. I love learning new technologies and solving complex problems through code.</p>
+                
+                <h3>Chillan, Chile</h3>
+                <div class="flag-container">
+                    <img src="images/flag.png" alt="Flag of Chile" width="150" height="100">
+                    <p class="flag-caption">Official Flag of Chile</p>
+                </div>
+                <p>Chillan is a city in Chile's Ñuble Region, known for its rich cultural heritage and as the birthplace of several notable Chilean figures. The city is surrounded by beautiful landscapes including the Andes Mountains and fertile agricultural lands.</p>
+            </div>
+        </section>
+
+        <section class="card" aria-labelledby="resources-heading">
+            <h2 id="resources-heading">Web Dev Resources</h2>
+            <div class="card-content">
+                <ul class="resources-list">
+                    <li><a href="https://developer.mozilla.org/en-US/" target="_blank" rel="noopener">MDN Web Docs</a></li>
+                    <li><a href="https://www.w3schools.com/" target="_blank" rel="noopener">W3Schools</a></li>
+                    <li><a href="https://css-tricks.com/" target="_blank" rel="noopener">CSS Tricks</a></li>
+                    <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
+                    <li><a href="https://codepen.io/" target="_blank" rel="noopener">CodePen</a></li>
+                    <li><a href="https://www.freecodecamp.org/" target="_blank" rel="noopener">freeCodeCamp</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Cristobal Figueroa | Chillan, Chile</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
