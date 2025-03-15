@@ -1,0 +1,57 @@
+/* Large Screen Styles - Applied when viewport width is 768px or larger */
+
+/* Header and Navigation */
+.header-content {
+    justify-content: flex-start;
+}
+
+.header-content h2 {
+    margin-right: 2rem;
+}
+
+/* Hide hamburger and close buttons on larger screens */
+#hamburger-button, 
+#close-button {
+    display: none;
+}
+
+/* Show navigation by default on larger screens */
+nav {
+    display: block;
+    margin-top: 0;
+    width: auto;
+}
+
+nav ul {
+    flex-direction: row;
+}
+
+nav li {
+    margin-bottom: 0;
+    margin-right: 1.5rem;
+}
+
+nav li:last-child {
+    margin-right: 0;
+}
+
+/* Temple Grid - Multiple columns for larger screens */
+.temple-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+/* Main content width adjustment */
+main {
+    padding: 2rem;
+}
+
+/* Larger headings */
+h1 {
+    font-size: 2.5rem;
+    margin: 2rem 0;
+}
+
+/* Footer adjustments */
+footer {
+    padding: 1.5rem;
+}

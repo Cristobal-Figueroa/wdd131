@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css" media="(min-width: 768px)">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h2>Temple Album</h2>
+            <button id="hamburger-button" aria-label="Toggle menu">
+                <span>&#9776;</span>
+            </button>
+            <button id="close-button" aria-label="Close menu">
+                <span>&#10005;</span>
+            </button>
+        </div>
+        <nav id="primary-nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Old</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Large</a></li>
+                <li><a href="#">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Beautiful Temples Around the World</h1>
+        <div class="temple-grid">
+            <figure>
+                <img src="images/temple.webp" alt="Salt Lake Temple">
+                <figcaption>Salt Lake Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple.webp" alt="Provo Temple">
+                <figcaption>Provo Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple.webp" alt="Rome Italy Temple">
+                <figcaption>Rome Italy Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple.webp" alt="San Diego California Temple">
+                <figcaption>San Diego California Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple.webp" alt="Tokyo Japan Temple">
+                <figcaption>Tokyo Japan Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple.webp" alt="Washington D.C. Temple">
+                <figcaption>Washington D.C. Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple.webp" alt="Mesa Arizona Temple">
+                <figcaption>Mesa Arizona Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple.webp" alt="Paris France Temple">
+                <figcaption>Paris France Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple.webp" alt="Hong Kong China Temple">
+                <figcaption>Hong Kong China Temple</figcaption>
+            </figure>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> | Cristobal Figueroa | WDD 131</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
