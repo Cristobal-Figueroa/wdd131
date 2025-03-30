@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtered Temple Album</title>
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css" media="(min-width: 768px)">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h2>Temple Album</h2>
+            <button id="hamburger-button" aria-label="Toggle menu">
+                <span>&#9776;</span>
+            </button>
+            <button id="close-button" aria-label="Close menu">
+                <span>&#10005;</span>
+            </button>
+        </div>
+        <nav id="primary-nav">
+            <ul>
+                <li><a href="#" id="home-filter">Home</a></li>
+                <li><a href="#" id="old-filter">Old</a></li>
+                <li><a href="#" id="new-filter">New</a></li>
+                <li><a href="#" id="large-filter">Large</a></li>
+                <li><a href="#" id="small-filter">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Beautiful Temples Around the World</h1>
+        <div class="temple-grid" id="temple-grid">
+            
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> | Cristobal Figueroa | WDD 131</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+        <p><a href="temple-references.html">Image References</a></p>
+    </footer>
+</body>
+</html>
