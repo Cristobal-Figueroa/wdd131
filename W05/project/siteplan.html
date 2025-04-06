@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mountain Trail Explorers - Site Plan</title>
+    <style>
+        /* Color Schema */
+        :root {
+            --primary-color: #2E5A88; /* Mountain Blue */
+            --secondary-color: #8DAA54; /* Forest Green */
+            --accent-color: #E8C547; /* Sunshine Yellow */
+            --background-color: #F5F5F5; /* Light Gray */
+            --text-color: #333333; /* Dark Gray */
+        }
+
+        /* Typography */
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&family=Pacifico&display=swap');
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--primary-color);
+        }
+
+        h1 {
+            text-align: center;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            color: var(--secondary-color);
+            border-bottom: 1px solid var(--secondary-color);
+            padding-bottom: 5px;
+        }
+
+        .special-title {
+            font-family: 'Pacifico', cursive;
+            color: var(--accent-color);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .color-sample {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+            vertical-align: middle;
+            border: 1px solid #ccc;
+        }
+
+        .color-info {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .wireframe-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .wireframe {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 20px;
+            width: 45%;
+        }
+
+        .wireframe img {
+            width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+        }
+
+        @media (max-width: 768px) {
+            .wireframe {
+                width: 100%;
+            }
+        }
+
+        .highlight {
+            background-color: var(--accent-color);
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+
+        .scenario {
+            background-color: rgba(141, 170, 84, 0.1);
+            padding: 15px;
+            border-left: 4px solid var(--secondary-color);
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Mountain Trail Explorers - Site Plan</h1>
+            <p class="special-title" style="text-align: center;">Your Guide to Mountain Adventures</p>
+        </header>
+
+        <main>
+            <section id="site-name">
+                <h2>Site Name</h2>
+                <p><strong>Mountain Trail Explorers</strong></p>
+                <p>This name was chosen to represent a community of hiking enthusiasts who explore mountain trails. The name clearly communicates the focus on mountain hiking and exploration, making it immediately relevant to the target audience of outdoor enthusiasts.</p>
+            </section>
+
+            <section id="site-purpose">
+                <h2>Site Purpose</h2>
+                <p>The <span class="highlight">Mountain Trail Explorers</span> website serves as a comprehensive resource for mountain hiking enthusiasts. The site aims to:</p>
+                <ul>
+                    <li>Provide detailed information about various mountain trails, including difficulty levels, elevation gains, and estimated completion times</li>
+                    <li>Offer safety tips, recommended gear for different types of trails, and seasonal hiking recommendations</li>
+                    <li>Create a community platform where hikers can share their experiences and connect with fellow enthusiasts</li>
+                    <li>Promote responsible hiking practices and environmental conservation</li>
+                </ul>
+            </section>
+
+            <section id="scenarios">
+                <h2>Scenarios</h2>
+                <div class="scenario">
+                    <p><strong>Scenario 1:</strong> "I'm planning a hiking trip this weekend. What trails are suitable for intermediate hikers in the local mountain range?"</p>
+                </div>
+                <div class="scenario">
+                    <p><strong>Scenario 2:</strong> "What essential gear should I pack for a day hike in mountainous terrain during spring?"</p>
+                </div>
+                <div class="scenario">
+                    <p><strong>Scenario 3:</strong> "How can I connect with other hikers who are interested in group expeditions to challenging mountain trails?"</p>
+                </div>
+            </section>
+
+            <section id="color-schema">
+                <h2>Color Schema</h2>
+                <div class="color-info">
+                    <div class="color-sample" style="background-color: #2E5A88;"></div>
+                    <p><strong>Primary Color:</strong> #2E5A88 (Mountain Blue) - Used for headers, navigation bar, and call-to-action buttons</p>
+                </div>
+                <div class="color-info">
+                    <div class="color-sample" style="background-color: #8DAA54;"></div>
+                    <p><strong>Secondary Color:</strong> #8DAA54 (Forest Green) - Used for secondary headings and highlighted information</p>
+                </div>
+                <div class="color-info">
+                    <div class="color-sample" style="background-color: #E8C547;"></div>
+                    <p><strong>Accent Color:</strong> #E8C547 (Sunshine Yellow) - Used for important alerts, highlights, and interactive elements</p>
+                </div>
+                <div class="color-info">
+                    <div class="color-sample" style="background-color: #F5F5F5;"></div>
+                    <p><strong>Background Color:</strong> #F5F5F5 (Light Gray) - Used for the main background to ensure readability</p>
+                </div>
+                <div class="color-info">
+                    <div class="color-sample" style="background-color: #333333;"></div>
+                    <p><strong>Text Color:</strong> #333333 (Dark Gray) - Used for main text content for optimal readability</p>
+                </div>
+            </section>
+
+            <section id="typography">
+                <h2>Typography</h2>
+                <p style="font-family: 'Montserrat', sans-serif;"><strong>Primary Font:</strong> "Montserrat" - Used for all headings and navigation elements to convey a modern, clean aesthetic that reflects the outdoor adventure theme</p>
+                <p style="font-family: 'Open Sans', sans-serif;"><strong>Secondary Font:</strong> "Open Sans" - Used for body text and content for optimal readability across devices</p>
+                <p style="font-family: 'Pacifico', cursive;"><strong>Accent Font:</strong> "Pacifico" - Used sparingly for special section titles to add visual interest</p>
+            </section>
+
+            <section id="wireframes">
+                <h2>Wireframes</h2>
+                <div class="wireframe-container">
+                    <div class="wireframe">
+                        <h3>Mobile View</h3>
+                        <div style="background-color: white; border: 1px solid #ccc; padding: 10px;">
+                            <!-- Mobile Wireframe Representation -->
+                            <div style="background-color: var(--primary-color); color: white; padding: 10px; text-align: center;">Logo & Hamburger Menu</div>
+                            <div style="padding: 10px; border: 1px solid #ddd; margin: 10px 0; text-align: center;">Hero Image with Search Bar</div>
+                            <div style="padding: 10px; border: 1px solid #ddd; margin: 10px 0;">Featured Trails Section</div>
+                            <div style="padding: 10px; border: 1px solid #ddd; margin: 10px 0;">Seasonal Recommendations</div>
+                            <div style="padding: 10px; border: 1px solid #ddd; margin: 10px 0;">Gear Guides</div>
+                            <div style="padding: 10px; border: 1px solid #ddd; margin: 10px 0;">Community Highlights</div>
+                            <div style="background-color: var(--primary-color); color: white; padding: 10px; text-align: center;">Footer with Contact & Links</div>
+                        </div>
+                    </div>
+                    <div class="wireframe">
+                        <h3>Desktop View</h3>
+                        <div style="background-color: white; border: 1px solid #ccc; padding: 10px;">
+                            <!-- Desktop Wireframe Representation -->
+                            <div style="background-color: var(--primary-color); color: white; padding: 10px; display: flex; justify-content: space-between;">
+                                <span>Logo</span>
+                                <span>Navigation Links</span>
+                            </div>
+                            <div style="padding: 10px; border: 1px solid #ddd; margin: 10px 0; text-align: center;">Hero Image with Search Bar</div>
+                            <div style="display: flex; margin: 10px 0;">
+                                <div style="flex: 3; padding: 10px; border: 1px solid #ddd; margin-right: 10px;">
+                                    <div>Featured Trails Section</div>
+                                    <div style="margin-top: 10px;">Seasonal Recommendations</div>
+                                    <div style="margin-top: 10px;">Gear Guides</div>
+                                </div>
+                                <div style="flex: 1; padding: 10px; border: 1px solid #ddd;">Sidebar with Community Posts & Events</div>
+                            </div>
+                            <div style="background-color: var(--primary-color); color: white; padding: 10px; display: flex; justify-content: space-between;">
+                                <span>Contact Info</span>
+                                <span>Quick Links</span>
+                                <span>Newsletter Signup</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p style="text-align: center; margin-top: 30px; color: var(--primary-color);">&copy; 2025 Mountain Trail Explorers - Site Plan</p>
+        </footer>
+    </div>
+</body>
+</html>
