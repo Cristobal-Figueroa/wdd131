@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Product review form to collect user feedback on various products">
+    <title>Product Review Form</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <main>
+        <form method="get" action="review.html">
+            <div class="form-group">
+                <label for="product">Product Name <span class="required">*</span></label>
+                <select id="product" name="product" required>
+                    <option value="" disabled selected>Choose a Product ...</option>
+                   
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Overall Rating <span class="required">*</span></label>
+                <div class="rating-container">
+                    <div class="rating-option">
+                        <input type="radio" id="star1" name="rating" value="1" required>
+                        <label for="star1">★</label>
+                    </div>
+                    <div class="rating-option">
+                        <input type="radio" id="star2" name="rating" value="2">
+                        <label for="star2">★★</label>
+                    </div>
+                    <div class="rating-option">
+                        <input type="radio" id="star3" name="rating" value="3">
+                        <label for="star3">★★★</label>
+                    </div>
+                    <div class="rating-option">
+                        <input type="radio" id="star4" name="rating" value="4">
+                        <label for="star4">★★★★</label>
+                    </div>
+                    <div class="rating-option">
+                        <input type="radio" id="star5" name="rating" value="5">
+                        <label for="star5">★★★★★</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="installation-date">Date of Installation <span class="required">*</span></label>
+                <input type="date" id="installation-date" name="installation-date" required>
+            </div>
+
+            <div class="form-group">
+                <label>Which features did you find useful in the product?</label>
+                <p class="subtitle">(Check all that apply)</p>
+                <div class="checkbox-group">
+                    <div class="checkbox-option">
+                        <input type="checkbox" id="feature-durability" name="features" value="Durability">
+                        <label for="feature-durability">Durability</label>
+                    </div>
+                    <div class="checkbox-option">
+                        <input type="checkbox" id="feature-ease" name="features" value="Ease of Use">
+                        <label for="feature-ease">Ease of Use</label>
+                    </div>
+                    <div class="checkbox-option">
+                        <input type="checkbox" id="feature-performance" name="features" value="Performance">
+                        <label for="feature-performance">Performance</label>
+                    </div>
+                    <div class="checkbox-option">
+                        <input type="checkbox" id="feature-design" name="features" value="Design">
+                        <label for="feature-design">Design</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="review">Written Review <span class="optional">(Optional)</span></label>
+                <textarea id="review" name="review" rows="5"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="username">Your Name <span class="optional">(Optional)</span></label>
+                <input type="text" id="username" name="username">
+            </div>
+
+            <div class="form-group submit-group">
+                <input type="submit" value="Post Review" class="submit-btn">
+            </div>
+            <p class="form-note"><span class="required">*</span> indicates required fields</p>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="year"></span> 🧉Cristobal Figueroa🧉</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

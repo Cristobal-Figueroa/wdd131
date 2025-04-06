@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Thank you for submitting your product review">
+    <title>Review Submitted</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/review.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Thank You for Your Review!</h1>
+    </header>
+
+    <main>
+        <div class="confirmation-container">
+            <p>Your review has been successfully submitted.</p>
+            <div class="review-details">
+                <h2>Review Details:</h2>
+                <div id="review-summary">
+                    <!-- Will be populated by JavaScript -->
+                </div>
+            </div>
+            <div class="counter-container">
+                <p>You have submitted <span id="review-count">0</span> reviews.</p>
+            </div>
+            <div class="button-container">
+                <a href="form.html" class="button">Submit Another Review</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="year"></span> 🧉Cristobal Figueroa🧉</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
