@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the rich and diverse Chilean cuisine, from empanadas to pastel de choclo, with recipes, ingredients, and regional specialties.">
+    <title>Chilean Cuisine Explorer - A Culinary Journey Through Chile</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/button-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Chilean Cuisine Explorer</h1>
+                <p class="tagline">A Culinary Journey Through Chile</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="recipes.html">Recipes</a></li>
+                    <li><a href="ingredients.html">Ingredients</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="menu-toggle" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Discover the Authentic Flavors of Chile</h2>
+                    <p>Welcome to Chilean Cuisine Explorer, your ultimate guide to Chilean gastronomy. From empanadas de pino to curanto, explore the traditional dishes that define Chile's culinary identity.</p>
+                    <a href="recipes.html" class="btn">Explore Recipes</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="intro">
+            <div class="container">
+                <h2>Chilean Culinary Culture</h2>
+                <div class="intro-content">
+                    <div class="intro-text">
+                        <p>Chilean cuisine is the result of blending indigenous Mapuche traditions with Spanish influences and, later, contributions from German, Italian, and Arab immigrants. This unique mixture has created a diverse cuisine that varies significantly from north to south.</p>
+                        <p>Chile, with its extremely varied geography spanning over 4,300 km from north to south, offers an impressive diversity of ingredients and culinary techniques. From fresh seafood from the Pacific coast to roasted meats from Patagonia, each region has its distinctive specialties.</p>
+                    </div>
+                    <div class="intro-image">
+                        <img src="images/recipes/curanto.jpg" alt="Traditional Chilean table with various typical dishes" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-dishes">
+            <div class="container">
+                <h2>Featured Dishes</h2>
+                <div class="dishes-grid">
+                    <div class="dish-card">
+                        <img src="images/recipes/empanadas.jpg" alt="Freshly baked Chilean empanadas" loading="lazy">
+                        <h3>Empanadas de Pino</h3>
+                        <p>Baked pastries filled with ground beef, onions, olives, hard-boiled eggs, and raisins.</p>
+                        <a href="recipes.html#empanadas" class="btn-small">View Recipe</a>
+                    </div>
+                    <div class="dish-card">
+                        <img src="images/recipes/pasteldecholo.webp" alt="Pastel de choclo served in traditional clay pot" loading="lazy">
+                        <h3>Pastel de Choclo</h3>
+                        <p>Corn-based casserole with beef, chicken, olives, and hard-boiled eggs.</p>
+                        <a href="recipes.html#pastel-choclo" class="btn-small">View Recipe</a>
+                    </div>
+                    <div class="dish-card">
+                        <img src="images/recipes/completo.jpg" alt="Completo Italiano with all ingredients" loading="lazy">
+                        <h3>Completo Italiano</h3>
+                        <p>Chilean hot dog with avocado, tomato, and mayonnaise, representing the colors of the Italian flag.</p>
+                        <a href="recipes.html#completo" class="btn-small">View Recipe</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="regions">
+            <div class="container">
+                <h2>Regional Diversity</h2>
+                <div class="region-cards">
+                    <div class="region-card" id="norte">
+                        <h3>North</h3>
+                        <p>Influenced by Andean and Peruvian cuisine, with dishes like northern ceviche and calapurca.</p>
+                    </div>
+                    <div class="region-card" id="centro">
+                        <h3>Central</h3>
+                        <p>Home to emblematic dishes such as empanadas, pastel de choclo, and porotos con riendas.</p>
+                    </div>
+                    <div class="region-card" id="sur">
+                        <h3>South</h3>
+                        <p>Strong German influence, featuring dishes like curanto, Patagonian roast, and kuchen.</p>
+                    </div>
+                </div>
+                <div class="region-info" id="region-info">
+                    <p>Select a region to learn more about its gastronomy</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <div class="container">
+                <h2>Get Our Updates</h2>
+                <p>Subscribe to receive new recipes and articles about Chilean gastronomy.</p>
+                <form id="newsletter-form">
+                    <input type="email" id="email" name="email" placeholder="Your email address" required>
+                    <button type="submit" class="btn">Subscribe</button>
+                </form>
+                <div id="subscription-message"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Chilean Cuisine Explorer</h2>
+                    <p>A culinary journey through Chile</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="recipes.html">Recipes</a></li>
+                        <li><a href="ingredients.html">Ingredients</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Chilean Cuisine Explorer. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

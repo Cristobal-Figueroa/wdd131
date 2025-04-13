@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact us to share your favorite Chilean recipes, ask questions about Chilean cuisine, or suggest new content for our site.">
+    <title>Contact - Chilean Cuisine Explorer</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/button-styles.css">
+    <link rel="stylesheet" href="css/contact-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Chilean Cuisine Explorer</h1>
+                <p class="tagline">A Culinary Journey Through Chile</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="recipes.html">Recipes</a></li>
+                    <li><a href="ingredients.html">Ingredients</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="menu-toggle" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h2>Contact</h2>
+                <p>Do you have a Chilean recipe to share? Questions about ingredients or techniques? We would love to hear from you!</p>
+            </div>
+        </section>
+
+        <section class="contact-options">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Send a Message</h3>
+                        <p>Complete our contact form and we will respond as soon as possible.</p>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-utensils"></i>
+                        <h3>Share a Recipe</h3>
+                        <p>Do you have a family Chilean recipe? Share it with our community.</p>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-question-circle"></i>
+                        <h3>Ask a Question</h3>
+                        <p>Questions about ingredients or techniques? We're here to help you.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-form">
+            <div class="container">
+                <h2>Contact Form</h2>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name <span class="required">*</span></label>
+                        <input type="text" id="name" name="name" required>
+                        <span class="error-message" id="name-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" required>
+                        <span class="error-message" id="email-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject">
+                            <option value="general">General Inquiry</option>
+                            <option value="recipe">Share Recipe</option>
+                            <option value="ingredient">Question about Ingredients</option>
+                            <option value="suggestion">Suggestion</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message <span class="required">*</span></label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <span class="error-message" id="message-error"></span>
+                    </div>
+                    <div class="form-group recipe-upload" id="recipe-upload">
+                        <label for="recipe-title">Recipe Title</label>
+                        <input type="text" id="recipe-title" name="recipe-title">
+                        <label for="recipe-region">Region of Origin</label>
+                        <select id="recipe-region" name="recipe-region">
+                            <option value="norte">North</option>
+                            <option value="centro">Central</option>
+                            <option value="sur">South</option>
+                            <option value="austral">Austral</option>
+                        </select>
+                        <label for="recipe-description">Description and Preparation</label>
+                        <textarea id="recipe-description" name="recipe-description" rows="5"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            I would like to receive updates and new recipes by email
+                        </label>
+                    </div>
+                    <div class="form-group form-buttons">
+                        <button type="submit" class="btn">Send Message</button>
+                        <button type="reset" class="btn-secondary">Clear Form</button>
+                    </div>
+                </form>
+                <div id="form-response" class="form-response">
+                    <!-- Success or error messages will appear here -->
+                </div>
+            </div>
+        </section>
+
+        <section class="faq">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                <div class="accordion" id="faq-accordion">
+                    <div class="accordion-item active">
+                        <button class="accordion-header" id="faq1-header">
+                            Where can I find Chilean ingredients outside of Chile?
+                            <span class="accordion-icon"></span>
+                        </button>
+                        <div class="accordion-content" id="faq1-content">
+                            <p>Many Chilean ingredients can be found in specialized Latin American stores or online retailers. We recommend checking:</p>
+                            <ul>
+                                <li>Latin American or South American specialty grocery stores</li>
+                                <li>Online marketplaces like Amazon, Mercado Latino, or Tienda.com</li>
+                                <li>International sections of larger supermarkets</li>
+                                <li>Local Chilean or South American restaurants may also sell some ingredients</li>
+                            </ul>
+                            <p>On our <a href="ingredients.html">Ingredients</a> page, we offer detailed information about where to find specific items and possible substitutes that work well in Chilean recipes.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header" id="faq2-header">
+                            Can I adapt the recipes if I can't find all the ingredients?
+                            <span class="accordion-icon"></span>
+                        </button>
+                        <div class="accordion-content" id="faq2-content">
+                            <p>Absolutely! We understand that some Chilean ingredients can be difficult to find outside the country. Here are some general substitution guidelines:</p>
+                            <ul>
+                                <li><strong>Merkén</strong>: Mix smoked paprika with cayenne pepper and ground coriander</li>
+                                <li><strong>Ají chileno</strong>: Substitute with red jalapeños or fresno peppers</li>
+                                <li><strong>Cochayuyo</strong>: Use kombu or other dried seaweed</li>
+                                <li><strong>Mote</strong>: Pearl barley or wheat berries work well</li>
+                                <li><strong>Chilote potatoes</strong>: Small waxy potatoes like fingerlings or new potatoes</li>
+                            </ul>
+                            <p>Each recipe on our site includes specific substitution suggestions that maintain the authentic flavor profile while using more accessible ingredients.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header" id="faq3-header">
+                            How can I contribute my own Chilean recipes?
+                            <span class="accordion-icon"></span>
+                        </button>
+                        <div class="accordion-content" id="faq3-content">
+                            <p>We welcome contributions from our community! To share your Chilean recipes:</p>
+                            <ol>
+                                <li>Fill out our contact form above</li>
+                                <li>Select "Share Recipe" from the subject dropdown</li>
+                                <li>Complete the recipe details including title, region of origin, ingredients, and preparation instructions</li>
+                                <li>If possible, include information about the history or cultural significance of the dish</li>
+                            </ol>
+                            <p>Our culinary team will review your submission and may contact you for additional details or clarification. If selected, your recipe will be featured on our site with full credit to you (unless you prefer to remain anonymous). We particularly value family recipes and regional variations that showcase Chile's diverse culinary heritage.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Chilean Cuisine Explorer</h2>
+                    <p>A culinary journey through Chile</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="recipes.html">Recipes</a></li>
+                        <li><a href="ingredients.html">Ingredients</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Chilean Cuisine Explorer. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

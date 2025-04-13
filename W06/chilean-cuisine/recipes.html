@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover traditional Chilean recipes, from empanadas and pastel de choclo to completos and cazuela. Learn how to prepare authentic Chilean dishes.">
+    <title>Chilean Recipes - Chilean Cuisine Explorer</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/recipe-cards.css">
+    <link rel="stylesheet" href="css/filter-styles.css">
+    <link rel="stylesheet" href="css/button-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Chilean Cuisine Explorer</h1>
+                <p class="tagline">A Culinary Journey Through Chile</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="recipes.html" class="active">Recipes</a></li>
+                    <li><a href="ingredients.html">Ingredients</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="menu-toggle" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h2>Traditional Chilean Recipes</h2>
+                <p>Explore our collection of authentic Chilean recipes, from main dishes to desserts and traditional beverages.</p>
+            </div>
+        </section>
+
+        <section class="recipe-filters">
+            <div class="container">
+                <h3>Filter Recipes</h3>
+                <div class="filter-controls">
+                    <div class="filter-group">
+                        <label for="region-filter">Region:</label>
+                        <select id="region-filter">
+                            <option value="all">All</option>
+                            <option value="norte">North</option>
+                            <option value="centro">Central</option>
+                            <option value="sur">South</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="difficulty-filter">Difficulty:</label>
+                        <select id="difficulty-filter">
+                            <option value="all">All</option>
+                            <option value="facil">Easy</option>
+                            <option value="media">Medium</option>
+                            <option value="dificil">Difficult</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="ingredient-filter">Main Ingredient:</label>
+                        <select id="ingredient-filter">
+                            <option value="all">All</option>
+                            <option value="carne">Meat</option>
+                            <option value="mariscos">Seafood</option>
+                            <option value="verduras">Vegetables</option>
+                            <option value="maiz">Corn</option>
+                        </select>
+                    </div>
+                </div>
+                <button id="clear-filters" style="background-color: #d32f2f; color: white; border: none; padding: 10px 20px; font-weight: bold; border-radius: 4px; cursor: pointer; margin-top: 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.2);">Clear Filters</button>
+            </div>
+        </section>
+
+        <section class="recipes-grid">
+            <div class="container">
+                <div id="recipes-container" class="recipes-container">
+                    <!-- Recipes will be loaded dynamically with JavaScript -->
+                </div>
+                <div id="no-results" class="no-results hidden">
+                    <p>No recipes found matching the selected filters.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="recipe-detail" id="recipe-detail">
+            <div class="container">
+                <button id="back-to-recipes" class="btn-small"><i class="fas fa-arrow-left"></i> Back to recipes</button>
+                <div id="recipe-content">
+                    <!-- Detailed recipe content will be loaded here -->
+                </div>
+            </div>
+        </section>
+
+        <section class="save-favorites">
+            <div class="container">
+                <h3>Your Favorite Recipes</h3>
+                <p>Save your favorite recipes for easy access later.</p>
+                <div id="favorites-container" class="favorites-container">
+                    <p id="no-favorites">You haven't saved any favorite recipes yet.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Chilean Cuisine Explorer</h2>
+                    <p>A culinary journey through Chile</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="recipes.html">Recipes</a></li>
+                        <li><a href="ingredients.html">Ingredients</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Chilean Cuisine Explorer. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="js/recipes.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

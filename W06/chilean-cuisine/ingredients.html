@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover the unique ingredients of Chilean cuisine, from merkén to mote, and learn where to find them and how to use them.">
+    <title>Chilean Ingredients - Chilean Cuisine Explorer</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/button-styles.css">
+    <link rel="stylesheet" href="css/recipe-cards.css">
+    <link rel="stylesheet" href="css/ingredient-cards.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Chilean Cuisine Explorer</h1>
+                <p class="tagline">A Culinary Journey Through Chile</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="recipes.html">Recipes</a></li>
+                    <li><a href="ingredients.html" class="active">Ingredients</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="menu-toggle" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h2>Unique Ingredients of Chilean Cuisine</h2>
+                <p>Discover the distinctive flavors that make Chilean gastronomy unique and learn where to find them.</p>
+            </div>
+        </section>
+
+        <section class="ingredient-search">
+            <div class="container">
+                <div class="search-box">
+                    <input type="text" id="ingredient-search" placeholder="Search ingredient...">
+                    <button id="search-btn" aria-label="Search"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="ingredient-categories">
+                    <button class="category-btn active" data-category="all">All Ingredients</button>
+                    <button class="category-btn" data-category="especias">Spices and Seasonings</button>
+                    <button class="category-btn" data-category="verduras">Vegetables and Tubers</button>
+                    <button class="category-btn" data-category="granos">Grains and Cereals</button>
+                    <button class="category-btn" data-category="mariscos">Seafood and Seaweed</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="ingredients-grid">
+            <div class="container">
+                <div id="ingredients-container" class="ingredients-container">
+                    <!-- Ingredients will be loaded dynamically with JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <section class="ingredient-detail" id="ingredient-detail">
+            <div class="container">
+                <button id="back-to-ingredients" class="btn-small"><i class="fas fa-arrow-left"></i> Back to ingredients</button>
+                <div id="ingredient-content">
+                    <!-- Detailed ingredient content will be loaded here -->
+                </div>
+            </div>
+        </section>
+
+        <section class="where-to-find">
+            <div class="container">
+                <h2>Where to Find Chilean Ingredients?</h2>
+                <div class="find-options">
+                    <div class="find-option">
+                        <h3>Specialized Stores</h3>
+                        <p>Find authentic Chilean ingredients in specialized Latin American stores.</p>
+                        <button id="show-stores" class="btn-small">View Stores</button>
+                    </div>
+                    <div class="find-option">
+                        <h3>Online Shopping</h3>
+                        <p>Many Chilean ingredients are available in online stores with international shipping.</p>
+                        <button id="show-online" class="btn-small">View Online Options</button>
+                    </div>
+                    <div class="find-option">
+                        <h3>Substitutes</h3>
+                        <p>Learn what ingredients you can use as substitutes if you can't find the originals.</p>
+                        <button id="show-substitutes" class="btn-small">View Substitutes</button>
+                    </div>
+                </div>
+                <div id="find-details" class="find-details">
+                    <!-- Details about where to find ingredients will be shown here -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Chilean Cuisine Explorer</h2>
+                    <p>A culinary journey through Chile</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="recipes.html">Recipes</a></li>
+                        <li><a href="ingredients.html">Ingredients</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Chilean Cuisine Explorer. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="js/ingredients.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
